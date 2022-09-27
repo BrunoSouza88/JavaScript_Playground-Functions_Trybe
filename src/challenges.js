@@ -68,7 +68,6 @@ function fizzBuzz(array) {
 function encode() {
   // seu código aqui
 }
-  
 
 function decode() {
   // seu código aqui
@@ -90,5 +89,5 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-  techList
+  techList,
 };
