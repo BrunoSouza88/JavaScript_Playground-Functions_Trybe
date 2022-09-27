@@ -29,7 +29,7 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(array) {
+function highestCount(array){
 
   let maiorNumero = Math.max(...array);
   let qtdRepete = [];
@@ -42,30 +42,42 @@ function highestCount(array) {
     return qtdRepete.length
 }
 
-
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if (mouse === cat1 && mouse === cat2) {
-    return 'os gatos trombam e o rato foge'
-  } else if (cat2 < cat1) {
+  if (mouse < cat1) {
     return 'cat2'
-  } else if (cat1 < cat2) {
+  } else if (mouse < cat2) {
     return 'cat1'
+  } else if (mouse == cat1 && mouse == cat2){
+    return 'os gatos trombam e o rato foge'
   }
-
-
   // seu código aqui
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let conjFizzBuzz = [];
+  for (let index = 0; index < array.length; index +=1){
+    if (array[index] % 3 === 0 && array[index] % 5 === 0){
+      conjFizzBuzz.push('fizzBuzz');
+    } else if (array[index] % 3 === 0) {
+      conjFizzBuzz.push('fizz');
+    } else if (array[index] % 5 === 0){
+      conjFizzBuzz.push('buzz');
+    } else {
+      conjFizzBuzz.push('bug!')
+    }
+  }
+  return conjFizzBuzz
 }
 
+
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+
 }
+  // seu código aqui
+
 function decode() {
   // seu código aqui
 }
@@ -86,5 +98,5 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-  techList,
-};
+  techList
+}
