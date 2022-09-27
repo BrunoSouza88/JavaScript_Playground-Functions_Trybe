@@ -29,54 +29,46 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(array){
-
+function highestCount(array) { 
   let maiorNumero = Math.max(...array);
   let qtdRepete = [];
   
   for (let index = 0; index < array.length; index += 1) {
-      if (array[index] === maiorNumero) {
-        qtdRepete.push(array[index])
-      }
+    if (array[index] === maiorNumero) {
+      qtdRepete.push(array[index]);
     }
-    return qtdRepete.length
+  }
+  return qtdRepete.length;
 }
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
-  if (mouse < cat1) {
-    return 'cat2'
-  } else if (mouse < cat2) {
-    return 'cat1'
-  } else if (mouse == cat1 && mouse == cat2){
-    return 'os gatos trombam e o rato foge'
-  }
+function catAndMouse() {
+
   // seu código aqui
 }
 
 // Desafio 8
 function fizzBuzz(array) {
   let conjFizzBuzz = [];
-  for (let index = 0; index < array.length; index +=1){
-    if (array[index] % 3 === 0 && array[index] % 5 === 0){
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
       conjFizzBuzz.push('fizzBuzz');
     } else if (array[index] % 3 === 0) {
       conjFizzBuzz.push('fizz');
-    } else if (array[index] % 5 === 0){
+    } else if (array[index] % 5 === 0) {
       conjFizzBuzz.push('buzz');
     } else {
-      conjFizzBuzz.push('bug!')
+      conjFizzBuzz.push('bug!');
     }
   }
-  return conjFizzBuzz
+  return conjFizzBuzz;
 }
-
 
 // Desafio 9
-function encode(string) {
-
-}
+function encode() {
   // seu código aqui
+}
+  
 
 function decode() {
   // seu código aqui
@@ -99,4 +91,4 @@ module.exports = {
   highestCount,
   splitSentence,
   techList
-}
+};
