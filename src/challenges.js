@@ -91,8 +91,7 @@ function decode(string) {
 }
 
 // Desafio 10
-function techList() {
-
+function techList(tecs, pessoas) {
 }
 
 module.exports = {
