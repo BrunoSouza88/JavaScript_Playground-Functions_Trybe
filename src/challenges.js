@@ -18,7 +18,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(array) {
-  return (array[array.length - 1] + ', ' + array[0]);
+  return (`${array[array.length - 1]}, ${array[0]}`);
 }
 
 // Desafio 5
@@ -29,7 +29,7 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(array) { 
+function highestCount(array) {
   let maiorNumero = Math.max(...array);
   let qtdRepete = [];
   for (let index = 0; index < array.length; index += 1) {
@@ -44,12 +44,10 @@ function highestCount(array) {
 function catAndMouse(mouse, cat1, cat2) {
   if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)) {
     return 'cat1';
-} else if (Math.abs(mouse - cat1 === Math.abs(mouse - cat2))) {
+  } if (Math.abs(mouse - cat1 === Math.abs(mouse - cat2))) {
     return 'os gatos trombam e o rato foge';
-} else {
-    return 'cat2';
-}
-  // seu código aqui
+  }
+  return 'cat2';
 }
 
 // Desafio 8
@@ -91,7 +89,7 @@ function decode(string) {
 }
 
 // Desafio 10
-function techList(tecs, pessoas) {
+function techList() {
 }
 
 module.exports = {
