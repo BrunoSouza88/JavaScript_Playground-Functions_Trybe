@@ -42,15 +42,7 @@ function highestCount(array) {
 }
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
-  if (cat1 > cat2 && cat1 > mouse && cat2 > mouse) {
-    return 'cat2';
-} else if (cat2 > cat1 && cat2 > mouse && cat1 > mouse) {
-    return 'cat1';
-} else if (cat1 === mouse && cat1 === cat2 && cat2 === mouse) {
-    return 'os gatos trombam e o rato foge'
-}
-  
+function catAndMouse() {
   // seu código aqui
 }
 
@@ -79,7 +71,7 @@ function encode(string) {
   string2 = string2.replace(/i/g, '3');
   string2 = string2.replace(/o/g, '4');
   string2 = string2.replace(/u/g, '5');
-  return string2;i
+  return string2;
 }
 
 function decode(string) {
@@ -93,8 +85,8 @@ function decode(string) {
 }
 
 // Desafio 10
-function techList(){
-  
+function techList() {
+
 }
 
 module.exports = {
@@ -110,4 +102,3 @@ module.exports = {
   splitSentence,
   techList,
 };
-
